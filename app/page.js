@@ -2,6 +2,10 @@ import Image from 'next/image'
 import InteractiveART from "@/public/images/Interactive-ART.png"
 import HeaderImage from "@/public/images/header-img.svg"
 import MainImage from "@/public/images/main-img.svg"
+import person1 from "@/public/images/person-1.png"
+import person2 from "@/public/images/person-2.png"
+import person3 from "@/public/images/person-3.png"
+import Comments from './Comments'
 
 export default function Home() {
   return (
@@ -84,6 +88,22 @@ export default function Home() {
           </section>
         </div>
       </main>
+      <section className='py-16 bg-blue-600'>
+        <div className="container">
+          <div className='mx-auto max-w-3xl p-2' >
+            <h2 className='text-2xl  text-white text-center font-bold  mb-6'>You’re in a good hand</h2>
+            <p className='text-white  text-center m-4'> There are many variations of passages of Lorem Ipsum available, but the majority have suffered.</p>
+          </div>
+          <div className="flex ">
+            <Comments props={person1} />
+            <Comments props={person2} />
+            <Comments props={person3} />
+          </div>
+        </div>
+      </section>
+      <ja className="h-40 block">
+
+      </ja>
     </>
 
 
