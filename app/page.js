@@ -6,6 +6,19 @@ import person1 from "@/public/images/person-1.png"
 import person2 from "@/public/images/person-2.png"
 import person3 from "@/public/images/person-3.png"
 import Comments from './Comments'
+import company1 from "@/public/images/logo-1.svg"
+import company2 from "@/public/images/logo-2.svg"
+import company3 from "@/public/images/logo-3.svg"
+import company4 from "@/public/images/logo-4.svg"
+import company5 from "@/public/images/logo-5.svg"
+import portfolio1 from "@/public/images/portfolio-1.jpg"
+import portfolio2 from "@/public/images/portfolio-2.jpg"
+import portfolio3 from "@/public/images/portfolio-3.jpg"
+import portfolio4 from "@/public/images/portfolio-4.jpg"
+import portfolio5 from "@/public/images/portfolio-5.jpg"
+import portfolio6 from "@/public/images/portfolio-6.jpg"
+import arrow from "@/public/images/right-arrow.svg"
+
 
 export default function Home() {
   return (
@@ -79,25 +92,58 @@ export default function Home() {
 
             </div>
             <div className='mx-auto max-w-lg m-20'>
-              <Image
-                className='mx-auto w-full'
-                src={MainImage}
-                alt="header image"
-              />
+              <Image className='mx-auto w-full' src={MainImage} alt="header image" />
             </div>
           </section>
         </div>
       </main>
-      <section className='py-16 bg-blue-600'>
-        <div className="container">
-          <div className='mx-auto max-w-3xl p-2' >
+      <section className=' bg-blue-600'>
+        <div className="container max-w-6xl">
+          <div className='mx-auto  max-w-3xl p-2' >
             <h2 className='text-2xl  text-white text-center font-bold  mb-6'>You’re in a good hand</h2>
             <p className='text-white  text-center m-4'> There are many variations of passages of Lorem Ipsum available, but the majority have suffered.</p>
           </div>
-          <div className="flex ">
+          <div className="flex flex-wrap justify-center ">
             <Comments props={person1} />
             <Comments props={person2} />
             <Comments props={person3} />
+          </div>
+          <companies className="flex py-10  justify-between flex-wrap">
+            <Image className='mx-auto px-4 min-w-36' src={company1} alt="company logo" />
+            <Image className='mx-auto  px-4 min-w-36' src={company2} alt="company logo" />
+            <Image className='mx-auto  px-4 min-w-36' src={company3} alt="company logo" />
+            <Image className='mx-auto  px-4 min-w-36' src={company4} alt="company logo" />
+            <Image className='mx-auto px-4  min-w-36' src={company5} alt="company logo" />
+          </companies>
+        </div>
+      </section>
+      <section>
+        <div className='container'>
+          <div className='mx-auto  max-w-3xl p-2' >
+            <p className='  text-center m-4'> portfolio </p>
+            <h2 className='text-2xl   text-center font-bold  mb-6'>Lorem, ipsum dolor sit amet consectetur adipisicing.</h2>
+          </div>
+          <div className='flex flex-wrap justify-center '>
+
+            <Image className='m-3  ' src={portfolio1} alt="company logo" />
+            <Image className='m-3  ' src={portfolio2} alt="company logo" />
+            <Image className='m-3  ' src={portfolio3} alt="company logo" />
+            <Image className='m-3  ' src={portfolio4} alt="company logo" />
+            <Image className='m-3  ' src={portfolio5} alt="company logo" />
+            <Image className='m-3  ' src={portfolio6} alt="company logo" />
+          </div>
+        </div>
+      </section >
+      <section className='h-60 flex  items-center bg-blue-600'>
+        <div className='container'>
+          <div className='flex justify-around items-center'>
+            <p className='text-white '> There are many of passages of Lorem Ipsum available, but the majority have suffered.</p>
+            <div className='flex items-center w-60 h-9 justify-between rounded-sm bg-white'>
+              <p className='ml-2'>Email address</p>
+              <div className='w-7 h-7 p-1 mr-1 flex justify-center items-center rounded-sm bg-blue-600 '>
+                <Image className='p-1 ' src={arrow} alt="company logo" />
+              </div>
+            </div>
           </div>
         </div>
       </section>
