@@ -43,7 +43,7 @@ export default function Home() {
               <div>
               </div>
             </nav>
-            <a className='bg-blue-600 hover:bg-blue-700 px-6 py-3 text-white rounded-lg' href="#">
+            <a className='invisible bg-blue-600 hover:bg-blue-700 px-6 py-3 text-white rounded-lg lg:visible' href="#">
               Contact us
             </a>
           </section>
@@ -140,9 +140,9 @@ export default function Home() {
             <p className='text-white '> There are many of passages of Lorem Ipsum available, but the majority have suffered.</p>
             <div className='flex items-center w-60 h-9 justify-between rounded-sm bg-white'>
               <p className='ml-2'>Email address</p>
-              <div className='w-7 h-7 p-1 mr-1 flex justify-center items-center rounded-sm bg-blue-600 '>
+              <a href="" className='w-7 h-7 p-1 mr-1 flex justify-center items-center rounded-sm bg-blue-600 '>
                 <Image className='p-1 ' src={arrow} alt="company logo" />
-              </div>
+              </a>
             </div>
           </div>
         </div>
